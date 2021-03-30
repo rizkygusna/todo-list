@@ -20,6 +20,20 @@ while (userInput.toLowerCase()!=='quit'){
             console.log('**************************')
         }
     }
+    else if(userInput==='delete'){
+        if(todoList.length<=1){
+            alert("To do is empty")
+        }
+        else{
+            indexTarget = prompt('Input to do index that will be deleted');
+            if ((parseInt(indexTarget)>=0) && (parseInt(indexTarget) <= todoList.length)) {
+                todoList.splice(indexTarget,1)
+            }
+            else{
+                console.log('Invalid index number')
+            }
+        }
+    }
 }
 
 if (userInput.toLowerCase()==='quit'){
