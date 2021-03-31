@@ -4,7 +4,8 @@ let userInput = '';
 while (userInput.toLowerCase()!=='quit'){
     userInput = prompt('Input your command');
     if (userInput==='new'){
-        todoList.push(prompt('Input what todo'));
+        todoItem = prompt('Input what to do');
+        todoList.push(todoItem);
         console.log(todoList);
         alert("To do has been added")
     }
