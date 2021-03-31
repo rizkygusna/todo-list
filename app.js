@@ -22,7 +22,7 @@ while (userInput.toLowerCase()!=='quit'){
         }
     }
     else if(userInput==='delete'){
-        if(todoList.length<=1){
+        if(todoList.length<1){
             alert("To do is empty")
         }
         else{
